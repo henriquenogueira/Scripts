@@ -9,8 +9,9 @@ apt install -f -y
 apt install vim -y
 apt install rdesktop -y
 apt install nmap -y
-sudo apt install openvpn -y
+apt install openvpn -y
 apt install speedtest-cli -y
+apt install gimp -y
 snap install vlc -y
 apt install -f -y
 apt-get install gnome-tweak-tool -y
@@ -19,8 +20,8 @@ apt install net-tools -y
 apt update -y
 apt upgrade -y
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list -y
-sudo apt-get update -y
-sudo apt-get install -y mongodb-org -y
+apt-get update -y
+apt-get install -y mongodb-org -y
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
 sudo dpkg -i mongodb-compass_1.15.1_amd64.deb
 apt install -f -y
@@ -33,6 +34,7 @@ apt install npm -y
 apt install filezilla -y
 apt install git -y
 snap install spotify
+sudo snap install chromium -y
 snap install vscode --classic
 snap install vscode --edge
 snap refresh vscode
@@ -43,6 +45,7 @@ snap connect remmina:cups-control :cups-control
 snap connect remmina:mount-observe :mount-observe
 snap connect remmina:password-manager-service :password-manager-service
 snap install brackets --classic
+apt update -y
 apt upgrade -y
 apt autoremove -y
 reboot
