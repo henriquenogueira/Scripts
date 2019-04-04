@@ -3,6 +3,8 @@ dpkg -i wps-office_10.1.0.6757_amd64.deb
 add-apt-repository ppa:notepadqq-team/notepadqq -y
 apt-get update -y
 apt-get install notepadqq -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
 wget http://download.teamviewer.com/download/version_12x/teamviewer_i386.deb
 dpkg -i teamviewer_i386.deb
 apt install -f -y
@@ -34,7 +36,7 @@ apt install npm -y
 apt install filezilla -y
 apt install git -y
 snap install spotify
-sudo snap install chromium -y
+sudo snap install chromium
 snap install vscode --classic
 snap install vscode --edge
 snap refresh vscode
