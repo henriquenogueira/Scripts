@@ -1,5 +1,5 @@
-variable "accessKey" {}
-variable "secretKey" {}
+#variable "accessKey" {}
+#variable "secretKey" {}
 
 provider "aws" {
   region     = "us-east-1"
