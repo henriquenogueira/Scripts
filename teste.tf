@@ -1,10 +1,10 @@
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
+variable "accessKey" {}
+variable "secretKey" {}
 
 provider "aws" {
   region     = "us-east-1"
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  access_key = var.accessKey
+  secret_key = var.secretKey
 }
 resource "aws_instance" "elk" {
   ami           = "ami-09d8b5222f2b93bf0"
